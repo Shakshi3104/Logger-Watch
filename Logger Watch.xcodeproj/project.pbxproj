@@ -18,6 +18,7 @@
 		CEFD1D41245E89F400E33CA9 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1D40245E89F400E33CA9 /* NotificationView.swift */; };
 		CEFD1D43245E89F500E33CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFD1D42245E89F500E33CA9 /* Assets.xcassets */; };
 		CEFD1D46245E89F500E33CA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFD1D45245E89F500E33CA9 /* Preview Assets.xcassets */; };
+		CEFD1D57245E9B1600E33CA9 /* SensorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1D56245E9B1600E33CA9 /* SensorLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		CEFD1D45245E89F500E33CA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEFD1D47245E89F500E33CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEFD1D48245E89F500E33CA9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CEFD1D56245E9B1600E33CA9 /* SensorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				CEFD1D47245E89F500E33CA9 /* Info.plist */,
 				CEFD1D48245E89F500E33CA9 /* PushNotificationPayload.apns */,
 				CEFD1D44245E89F500E33CA9 /* Preview Content */,
+				CEFD1D56245E9B1600E33CA9 /* SensorLogger.swift */,
 			);
 			path = "Logger Watch WatchKit Extension";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				CEFD1D3B245E89F400E33CA9 /* HostingController.swift in Sources */,
 				CEFD1D39245E89F400E33CA9 /* ContentView.swift in Sources */,
 				CEFD1D3F245E89F400E33CA9 /* NotificationController.swift in Sources */,
+				CEFD1D57245E9B1600E33CA9 /* SensorLogger.swift in Sources */,
 				CEFD1D3D245E89F400E33CA9 /* ExtensionDelegate.swift in Sources */,
 				CEFD1D41245E89F400E33CA9 /* NotificationView.swift in Sources */,
 			);
