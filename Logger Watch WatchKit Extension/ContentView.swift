@@ -10,14 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var logStarting = false
-    @State private var accXLabel = "X"
-    @State private var accYLabel = "Y"
-    @State private var accZLabel = "Z"
-    @State private var gyrXLabel = "X"
-    @State private var gyrYLabel = "Y"
-    @State private var gyrZLabel = "Z"
-    
-    @ObservedObject var sensorLogger = SensorLogger()
+  
+    @ObservedObject var sensorLogger = SensorLogManager()
     
     var body: some View {
         VStack {
@@ -26,15 +20,10 @@ struct ContentView: View {
                 
                 if self.logStarting {
                     self.sensorLogger.startUpdate(50.0)
-                    self.accXLabel = String(format:  "%.1f", self.sensorLogger.accX)
-                    self.accYLabel = String(format: "%.1f", self.sensorLogger.accY)
-                    self.accZLabel = String(format: "%.1f", self.sensorLogger.accZ)
                 }
                 else {
+                    self.sensorLogger.stopUpdate()
                     
-                    self.accXLabel = "X"
-                    self.accYLabel = "Y"
-                    self.accZLabel = "Z"
                 }
             }) {
                 if self.logStarting {
@@ -44,32 +33,31 @@ struct ContentView: View {
                     Image(systemName: "play.circle")
                 }
             }
+            
+            Spacer()
+            
             VStack {
-                
-                
-                
+                Text("Accelerometer").font(.headline)
                 HStack {
-                    Text("Acc").font(.headline)
+                    Text(String(format: "%.2f", self.sensorLogger.accX))
                     Spacer()
-                    Text("\(accXLabel)")
+                    Text(String(format: "%.2f", self.sensorLogger.accY))
                     Spacer()
-                    Text("\(accYLabel)")
-                    Spacer()
-                    Text("\(accZLabel)")
+                    Text(String(format: "%.2f", self.sensorLogger.accZ))
                 }.padding(.horizontal)
                 
+                Spacer()
+                
+                Text("Gyroscope").font(.headline)
                 HStack {
-                    Text("Gyr").font(.headline)
+                    Text(String(format: "%.2f", self.sensorLogger.gyrX))
                     Spacer()
-                    Text("\(gyrXLabel)")
+                    Text(String(format: "%.2f", self.sensorLogger.gyrX))
                     Spacer()
-                    Text("\(gyrYLabel)")
-                    Spacer()
-                    Text("\(gyrZLabel)")
+                    Text(String(format: "%.2f", self.sensorLogger.gyrX))
                 }.padding(.horizontal)
             }
         }
-        
         
     }
 }
