@@ -34,9 +34,8 @@ struct ContentView: View {
                 }
             }
             
-            Spacer()
-            
             VStack {
+                VStack {
                 Text("Accelerometer").font(.headline)
                 HStack {
                     Text(String(format: "%.2f", self.sensorLogger.accX))
@@ -45,9 +44,9 @@ struct ContentView: View {
                     Spacer()
                     Text(String(format: "%.2f", self.sensorLogger.accZ))
                 }.padding(.horizontal)
+                }
                 
-                Spacer()
-                
+                VStack {
                 Text("Gyroscope").font(.headline)
                 HStack {
                     Text(String(format: "%.2f", self.sensorLogger.gyrX))
@@ -56,6 +55,8 @@ struct ContentView: View {
                     Spacer()
                     Text(String(format: "%.2f", self.sensorLogger.gyrX))
                 }.padding(.horizontal)
+                }
+
             }
         }
         
