@@ -4,8 +4,9 @@ This application can measure acceleration data, gyroscope data
 
 [Logger](https://github.com/Shakshi3104/Logger5) for watchOS
 
-:-:|:-:
-![screen](materials/IMG_4150.PNG)|![screen](materials/IMG_4151.PNG)
+
+![screen](materials/IMG_4150.PNG) | ![screen](materials/IMG_4151.PNG)
+:-: | :-:
 
 ## Version
 0.1.0
