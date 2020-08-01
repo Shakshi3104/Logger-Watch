@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE103A0B24D548B7005AE886 /* IMG_4150.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE103A0A24D548B7005AE886 /* IMG_4150.PNG */; };
 		CEFD1D25245E89F100E33CA9 /* Logger Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEFD1D24245E89F100E33CA9 /* Logger Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CEFD1D2B245E89F100E33CA9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD1D29245E89F100E33CA9 /* Interface.storyboard */; };
 		CEFD1D2D245E89F400E33CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFD1D2C245E89F400E33CA9 /* Assets.xcassets */; };
@@ -64,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE103A0824D54689005AE886 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE103A0A24D548B7005AE886 /* IMG_4150.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4150.PNG; sourceTree = "<group>"; };
 		CEFD1D20245E89F100E33CA9 /* Logger Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Logger Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFD1D24245E89F100E33CA9 /* Logger Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Logger Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFD1D2A245E89F100E33CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -93,9 +96,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE103A0924D54870005AE886 /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				CE103A0A24D548B7005AE886 /* IMG_4150.PNG */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
 		CEFD1D19245E89F100E33CA9 = {
 			isa = PBXGroup;
 			children = (
+				CE103A0924D54870005AE886 /* materials */,
+				CE103A0824D54689005AE886 /* README.md */,
 				CEFD1D28245E89F100E33CA9 /* Logger Watch WatchKit App */,
 				CEFD1D37245E89F400E33CA9 /* Logger Watch WatchKit Extension */,
 				CEFD1D21245E89F100E33CA9 /* Products */,
@@ -247,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE103A0B24D548B7005AE886 /* IMG_4150.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
