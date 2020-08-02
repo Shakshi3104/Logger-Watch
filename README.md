@@ -5,7 +5,7 @@ This application can measure acceleration data, gyroscope data
 [Logger](https://github.com/Shakshi3104/Logger5) for watchOS
 
 
-![screen](materials/IMG_4150.PNG) | ![screen](materials/IMG_4151.PNG)
+![screen](materials/IMG_4150.PNG) | ![screen](materials/IMG_4157.PNG)
 :-: | :-:
 
 ## Version
@@ -25,4 +25,4 @@ This application can measure acceleration data, gyroscope data
 |0.2.0|2020/8/2| Display gyroscope data (via deviceMotion.rotationRate)|
 
 ## Future
-Independently developed [Logger for iOS](https://github.com/Shakshi3104/Logger5) and Logger for watchOS will be combined into a single app (Logger for iOS and watchOS).
+Independently developed [Logger for iOS](https://github.com/Shakshi3104/Logger5) and Logger for watchOS will be combined into a single app ([Logger for iOS and watchOS](https://github.com/Shakshi3104/Logger6)).

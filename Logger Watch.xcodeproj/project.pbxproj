@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE05736224D550DB00A73CF4 /* IMG_4151.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE05736124D550DB00A73CF4 /* IMG_4151.PNG */; };
 		CE103A0B24D548B7005AE886 /* IMG_4150.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE103A0A24D548B7005AE886 /* IMG_4150.PNG */; };
+		CE77029724D698B500794923 /* IMG_4157.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE77029624D698B500794923 /* IMG_4157.PNG */; };
 		CEFD1D25245E89F100E33CA9 /* Logger Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEFD1D24245E89F100E33CA9 /* Logger Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CEFD1D2B245E89F100E33CA9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD1D29245E89F100E33CA9 /* Interface.storyboard */; };
 		CEFD1D2D245E89F400E33CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFD1D2C245E89F400E33CA9 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		CE05736124D550DB00A73CF4 /* IMG_4151.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4151.PNG; sourceTree = "<group>"; };
 		CE103A0824D54689005AE886 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CE103A0A24D548B7005AE886 /* IMG_4150.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4150.PNG; sourceTree = "<group>"; };
+		CE77029624D698B500794923 /* IMG_4157.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4157.PNG; sourceTree = "<group>"; };
 		CEFD1D20245E89F100E33CA9 /* Logger Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Logger Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFD1D24245E89F100E33CA9 /* Logger Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Logger Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFD1D2A245E89F100E33CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		CE103A0924D54870005AE886 /* materials */ = {
 			isa = PBXGroup;
 			children = (
+				CE77029624D698B500794923 /* IMG_4157.PNG */,
 				CE05736124D550DB00A73CF4 /* IMG_4151.PNG */,
 				CE103A0A24D548B7005AE886 /* IMG_4150.PNG */,
 			);
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE77029724D698B500794923 /* IMG_4157.PNG in Resources */,
 				CE05736224D550DB00A73CF4 /* IMG_4151.PNG in Resources */,
 				CE103A0B24D548B7005AE886 /* IMG_4150.PNG in Resources */,
 			);
