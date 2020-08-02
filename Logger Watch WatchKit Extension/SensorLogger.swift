@@ -46,7 +46,22 @@ class SensorLogManager: NSObject, ObservableObject {
             self.accZ = Double.nan
         }
         
-        if let data = motionManager?.gyroData {
+//        if let data = motionManager?.gyroData {
+//            let x = data.rotationRate.x
+//            let y = data.rotationRate.y
+//            let z = data.rotationRate.z
+//
+//            self.gyrX = x
+//            self.gyrY = y
+//            self.gyrZ = z
+//        }
+//        else {
+//            self.gyrX = Double.nan
+//            self.gyrY = Double.nan
+//            self.gyrZ = Double.nan
+//        }
+        
+        if let data = motionManager?.deviceMotion {
             let x = data.rotationRate.x
             let y = data.rotationRate.y
             let z = data.rotationRate.z
@@ -54,6 +69,7 @@ class SensorLogManager: NSObject, ObservableObject {
             self.gyrX = x
             self.gyrY = y
             self.gyrZ = z
+            
         }
         else {
             self.gyrX = Double.nan
@@ -69,8 +85,13 @@ class SensorLogManager: NSObject, ObservableObject {
             motionManager?.startAccelerometerUpdates()
         }
         
-        if motionManager!.isGyroAvailable {
-            motionManager?.startGyroUpdates()
+//        if motionManager!.isGyroAvailable {
+//            motionManager?.startGyroUpdates()
+//        }
+        
+        // Gyroscopeの生データの代わりにDeviceMotionのrotationRateを取得する
+        if motionManager!.isDeviceMotionAvailable {
+            motionManager?.startDeviceMotionUpdates()
         }
         
         // プル型でデータ取得
