@@ -22,6 +22,8 @@ class SensorLogManager: NSObject, ObservableObject {
     @Published var gyrY = 0.0
     @Published var gyrZ = 0.0
     
+    private var samplingFrequency = 50.0
+    
     var timer = Timer()
     
     override init() {
@@ -93,6 +95,8 @@ class SensorLogManager: NSObject, ObservableObject {
         if motionManager!.isDeviceMotionAvailable {
             motionManager?.startDeviceMotionUpdates()
         }
+        
+        self.samplingFrequency = freq
         
         // プル型でデータ取得
         self.timer = Timer.scheduledTimer(timeInterval: 1.0 / freq,
